@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sd-12">
+            <div class="TradingComponent">
+                <h4>Terms in Lifecycle of a Trade</h4>
+                <span class="note">Direction For Use: Select the terms in front of the correct definition and click submit</span>
+                <div class="boxContainer">
+                    <div class="box" (click)="select2($event)" id="{{Terms[j]}}" *ngFor="let i of Terms; let j = index">{{i}}</div>
+                </div>
+                <table style="width: 100%;">
+                    <tr>
+                        <th style="width: 85%; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">Definition</th>
+                        <th style="width: 15%; text-align: center; border-top-right-radius: 8px; border-bottom-right-radius: 8px;">Term</th>
+                    </tr>
+                    <tr *ngFor="let x of Definition; let y = index">
+                        <td id="{{y}}" [style.backgroundColor] ="this.id == y ? 'rgb(252, 165, 51)':''" (click)="select1($event)"  style="width:85% ; cursor: pointer;">{{x}}</td>
+                        <td style="width: 15%; text-align: center;" [style.backgroundColor] =" this.answer[y]==null ? '':'rgb(252, 165, 51)'">{{answer[y]}}</td>
+                    </tr>
+                </table>
+                <div class="Buttons">
+                    <span class="scorepart">Score: {{score}} / 8</span>
+                    <button class="SubmitBtn" (click)="submit()">Submit</button>
+                    <button class="ResetBtn" (click)="reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

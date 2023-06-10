@@ -1,0 +1,87 @@
+.TradingComponent{
+  width: 100%;
+  height: auto; 
+  background-color: rgb(248, 197, 69);
+  border-radius: 5px; 
+  padding: 2%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(106, 1, 1);
+  word-spacing: 2px;
+
+}
+.row{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h4{
+  font-size: 20px;
+  line-height: 10px; 
+} 
+.boxContainer{
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.box{
+  padding: 15px 15px;
+  background-color: rgb(243, 150, 29);
+  width: 12%;
+  font-size: 15px;
+  margin-right: 6px;
+  text-align: center;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 2px 4px rgba(81, 46, 0, 0.832);
+  cursor: pointer;
+}
+.Buttons{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.SubmitBtn{
+  padding: 6px 10px;
+  margin-right: 25px;
+  border-radius: 5px;
+  background-color: rgb(247, 201, 145);
+  border: 3px solid rgb(245, 100, 4);
+  color: rgb(106, 1, 1);
+  box-shadow: 2px 4px rgba(81, 46, 0, 0.832);
+  
+}
+.SubmitBtn:hover{
+  background-color:rgb(252, 142, 7) ;
+  border: 3px solid rgb(110, 45, 2);
+}
+.ResetBtn{
+  padding: 6px 15px;
+  border-radius: 5px;
+  margin-right: 150px;
+  background-color: rgb(247, 201, 145);
+  border: 3px solid rgb(245, 100, 4);
+  color: rgb(106, 1, 1);
+  box-shadow: -2px 4px rgba(81, 46, 0, 0.832);
+  
+}
+.ResetBtn:hover{
+  background-color:rgb(252, 142, 7) ;
+  border: 3px solid rgb(110, 45, 2);
+}
+table tr td{
+  padding: 1%;
+  border-bottom: 2px solid rgb(245, 100, 4);
+}
+
+table tr th{
+  padding: 1%;
+  font-size: 20px;
+  background-color: rgb(243, 150, 29);
+  box-shadow: 3px 6px rgba(81, 46, 0, 0.832);
+} 
+
+.scorepart{
+  float: left;
+  font-size: 25px;
+  margin-left: 20px;
+ 
+}
